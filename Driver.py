@@ -12,6 +12,7 @@ class Driver():
 
     def getElement(self, url, css_selector):
         self.driver.get(url)
+        self.driver.implicitly_wait(10)
         document_scroll_width = self.driver.execute_script("return document.documentElement.scrollWidth;")
         document_scroll_height = self.driver.execute_script("return document.documentElement.scrollHeight;")
         self.driver.set_window_size(document_scroll_width, document_scroll_height)
