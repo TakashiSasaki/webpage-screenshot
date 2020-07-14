@@ -9,12 +9,20 @@
   <title>Document</title>
   <style>
   body {margin:0px; padding 0px; overflow:hidden;}
-  iframe {width: 1000px; height:300px; margin:0px; padding:0px; overflow:hidden;}
-  img {width: 49%;margin:0px; padding:0px;}
+  iframe {width: 900px; height:400px; margin:0px; padding:0px; overflow:hidden;}
+  img {margin:0px; padding:0px}
+  img.rader {width: 49%;margin:0px; padding:0px;}
+  img.days {height:400px;}
   </style>
 </head>
 <body>
-  <iframe src="https://time.is/just"></iframe> <img src=
-  "example-yahoo/last.png"> <img src="example-rainmesh/last.png">
+  <div>
+    <iframe src="https://time.is/just"></iframe> <img src=
+    "example-days/last.png" class="days">
+    <div>
+      <div><img src="example-yahoo/last.png" class="rader">
+      <img src="example-rainmesh/last.png" class="rader"></div>
+    </div>
+  </div>
 </body>
 </html>
