@@ -55,11 +55,11 @@ class Folder():
         path = os.path.join(self.path_to_dir, new_png_file_name)
         driver = Driver.Driver()
         driver.savePng(self.conf["url"], self.conf["css_selector"], path)
+        del(driver)
         self.last["datetime"] = now_iso_format
         self.last["png_file_name"] = new_png_file_name
         self.last.save()
         shutil.copy(path, os.path.join(self.path_to_dir, "last.png"))
-        del(driver)
 
 
 if __name__ == "__main__":

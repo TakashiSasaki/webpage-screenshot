@@ -8,7 +8,7 @@ class Driver():
         chrome_options.add_argument('--no-sandbox')
         chrome_options.add_argument('--disable-dev-shm-usage')
         chrome_options.add_argument('--start-maximized')
-        self.driver = webdriver.Chrome(chrome_options=chrome_options, keep_alive=True)
+        self.driver = webdriver.Chrome(chrome_options=chrome_options, keep_alive=False)
 
     def getElement(self, url, css_selector):
         self.driver.get(url)
