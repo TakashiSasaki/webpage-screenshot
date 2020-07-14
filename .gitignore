@@ -1,1 +1,5 @@
 .@__thumb/
+*.png
+__pycache__/
+*.swp
+
