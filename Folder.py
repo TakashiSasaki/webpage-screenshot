@@ -60,9 +60,9 @@ class Folder():
         del(driver)
 
 if __name__ == "__main__":
-    conf = Conf(".")
-    last = Last(".")
-    folder = Folder(".")
+    conf = Conf("test")
+    last = Last("test")
+    folder = Folder("test")
     print(folder.last.isStale())
     folder.saveNewPng()
 
