@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 import os.path, json, Driver
 import datetime
+import shutil
 
 class Conf(dict):
     def __init__(self, dir):
@@ -57,7 +58,9 @@ class Folder():
         self.last["datetime"] = now_iso_format
         self.last["png_file_name"] = new_png_file_name
         self.last.save()
+        shutil.copy(path, os.path.join(self.path_to_dir, "last.png"))
         del(driver)
+
 
 if __name__ == "__main__":
     conf = Conf("test")
