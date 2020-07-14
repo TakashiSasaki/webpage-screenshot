@@ -1,4 +1,5 @@
 {
 "interval_seconds": 100,
-"url": "https://www.tenki.jp/"
+"url": "https://www.tenki.jp/forecast/8/41/7330/38422/1hour.html",
+"css_selector": "#forecast-point-1h-today"
 }
