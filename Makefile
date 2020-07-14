@@ -1,7 +1,8 @@
 .DEFAULT_GOAL: all
 .PHONY: all
 
-all: save_screenshot.png body.png selector.png
+all:
+	./Folders.py
 
 save_screenshot.png:
 	./save-screenshot.py https://www.yahoo.co.jp/ $@
