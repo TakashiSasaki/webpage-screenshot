@@ -1,0 +1,5 @@
+{
+"interval_seconds": 300,
+"url": "https://tenki.jp/forecast/8/41/7330/38422/",
+"css_selector": "#main-column > section > div.forecast-days-wrap.clearfix" 
+}
