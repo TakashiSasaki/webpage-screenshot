@@ -5,7 +5,7 @@ import datetime
 class Conf(dict):
     def __init__(self, dir):
         if not os.path.isdir(dir):
-            raise RuntimeError("Expecting to a path to a directory. " + dir)
+            raise FileNotFoundError("Expecting to a path to a directory. " + dir)
         self.dir = dir
         self.path = os.path.join(dir, "conf.json")
         self.update(json.load(open(self.path)))
