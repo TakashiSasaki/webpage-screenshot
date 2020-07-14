@@ -1,0 +1,5 @@
+{
+"interval_seconds": 100,
+"url": "https://weather.yahoo.co.jp/weather/raincloud/38/",
+"css_selector": "#imgDatCh > tbody > tr:nth-child(1) > td.mainImg > img"
+}

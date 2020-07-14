@@ -1,0 +1,5 @@
+{
+"interval_seconds": 100,
+"url": "https://tenki.jp/radar/8/41/rainmesh.html",
+"css_selector": "#rainmesh-image" 
+}
